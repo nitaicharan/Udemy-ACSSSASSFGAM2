@@ -158,7 +158,7 @@ Then don't waste your time with random tutorials or incomplete videos. All my co
 
 So see for yourself, enroll in one of my courses (or all of them :D) and join my 500,000+ happy students today.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.13.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
 ## Development server
 
