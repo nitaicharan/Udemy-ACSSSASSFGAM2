@@ -1,4 +1,5 @@
 .header {
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
@@ -6,20 +7,56 @@
 
 .logo {
     height: 3.25rem;
+    margin-left: 3rem;
 }
 
 .search {
+    
     &__input  {
-        
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all .2s;
+        margin-right: -3.25rem;
+
+        &:focus  {
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
+
+        &::placeholder  {
+            font-weight: 100;
+            color: var(--color-grey-light-4);
+        }
+    }
+
+    &__input:focus + &__button {
+        background-color: var(--color-grey-light-3);
     }
 
     &__button  {
-        
+        border: none;
+        background-color: var(--color-grey-light-2);
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
     }
 
     &__icon  {
         height: 2rem;
         width: 2rem;
+        fill: var(--color-grey-dark-3);
     }
 
 
@@ -27,7 +64,7 @@
 
 .user-nav {
     &__icon-box  {
-        
+
     }
 
     &__icon {
@@ -36,11 +73,11 @@
     }
 
     &__notification {
-        
+
     }
 
     &__user {
-        
+
     }
 
     &__user-photo  {
@@ -49,6 +86,6 @@
     }
 
     &__user-name {
-        
+
     }
 }
