@@ -1,1 +1,43 @@
-<main class="hotel-view">Hotel view</main>
+<main fxFill class="hotel-view">
+    <div fxLayout="row" class="gallery">
+        <figure class="gallery__item">
+            <img class="gallery__photo" src="assets/img/hotel-1.jpg" alt="Photo of hotel 1">
+        </figure>
+        <figure class="gallery__item">
+            <img class="gallery__photo" src="assets/img/hotel-2.jpg" alt="Photo of hotel 2">
+        </figure>
+        <figure class="gallery__item">
+            <img class="gallery__photo" src="assets/img/hotel-3.jpg" alt="Photo of hotel 3">
+        </figure>
+    </div>
+    <div fxLayout="row" class="overview">
+        <h1 class="overview__heading">Hotel Las Palmas</h1>
+        <div class="overview__stars">
+            <svg class="overview__icon-star">
+                <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+                <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+                <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+                <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+                <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+            </svg>
+        </div>
+        <div class="overview__location">
+            <svg class="overview__icon-location">
+                <use xlink:href="assets/img/sprite.svg#icon-location-pin"></use>
+            </svg>
+            <button class="btn-inline">Albofeira, Portugal</button>
+        </div>
+        <div class="overview__rationg">
+            <div class="overview__rating-average">8.6</div>
+            <div class="overview__rating-count">429 votes</div>
+        </div>
+    </div>
+</main>
