@@ -10,9 +10,11 @@
             <img class="gallery__photo" src="assets/img/hotel-3.jpg" alt="Photo of hotel 3">
         </figure>
     </div>
-    <div fxLayout="row" class="overview">
+
+    <div fxLayout="row" fxLayoutAlign="none stretch" class="overview">
         <h1 class="overview__heading">Hotel Las Palmas</h1>
-        <div class="overview__stars">
+
+        <div fxLayout="row" fxLayoutAlign="none center" class="overview__stars">
             <svg class="overview__icon-star">
                 <use xlink:href="assets/img/sprite.svg#icon-star"></use>
             </svg>
@@ -29,13 +31,15 @@
                 <use xlink:href="assets/img/sprite.svg#icon-star"></use>
             </svg>
         </div>
-        <div class="overview__location">
+
+        <div fxLayout="row" fxLayoutAlign="none center" class="overview__location">
             <svg class="overview__icon-location">
                 <use xlink:href="assets/img/sprite.svg#icon-location-pin"></use>
             </svg>
             <button class="btn-inline">Albofeira, Portugal</button>
         </div>
-        <div class="overview__rationg">
+
+        <div fxLayout="column" fxLayoutAlign="center center" class="overview__rating">
             <div class="overview__rating-average">8.6</div>
             <div class="overview__rating-count">429 votes</div>
         </div>
