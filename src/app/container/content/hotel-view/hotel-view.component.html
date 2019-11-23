@@ -62,13 +62,37 @@
             <div fxLayoutAlign="none center" class="recommend">
                 <p class="recommend__count">Lucy and 3 other friends reccomend this hotel</p>
                 <div class="recommend__fiends">
-                    <img class="recommend__photo" alt="Friend 1" src="assets/img/user-3.jpg" class="recommend__photo">
-                    <img class="recommend__photo" alt="Friend 2" src="assets/img/user-4.jpg" class="recommend__photo">
-                    <img class="recommend__photo" alt="Friend 3" src="assets/img/user-5.jpg" class="recommend__photo">
-                    <img class="recommend__photo" alt="Friend 4" src="assets/img/user-6.jpg" class="recommend__photo">
+                    <img class="recommend__photo" alt="Friend 1" src="assets/img/user-3.jpg">
+                    <img class="recommend__photo" alt="Friend 2" src="assets/img/user-4.jpg">
+                    <img class="recommend__photo" alt="Friend 3" src="assets/img/user-5.jpg">
+                    <img class="recommend__photo" alt="Friend 4" src="assets/img/user-6.jpg">
                 </div>
             </div>
         </div>
-        <div fxFlex="100" class="user-reviews">User reviews</div>
+        <div fxLayout="column" fxLayoutAlign="none center" fxFlex="100" class="user-reviews">
+            <figure class="review">
+                <blockquote class="review__text">Lorem voluptatum enim dolor labore reprehenderit. Dignissimos atque rerum ad mollitia laboriosam Cupiditate illo officia alias necessitatibus maxime, corrupti illo Officiis deleniti perferendis nostrum ratione dolorum. Consectetur laborum delectus iste?</blockquote>
+                <figcaption fxLayoutAlign="none center" class="review__user">
+                    <img class="review__photo" src="assets/img/user-1.jpg" alt="User 1">
+                    <div class="review__user-box">
+                        <p class="review__user-name">Nick Smith</p>
+                        <p class="review__user-date">Feb 23rd, 2017</p>
+                    </div>
+                    <div class="review__rating">7.8</div>
+                </figcaption>
+            </figure>
+            <figure class="review">
+                <blockquote class="review__text">Sit voluptate aliquam nisi beatae consequuntur doloribus? Dolorem tenetur est repellendus quod itaque? Autem in harum unde itaque et natus. Quae voluptatum alias culpa excepturi amet et. Alias quidem nemo!</blockquote>
+                <figcaption fxLayoutAlign="none center" class="review__user">
+                    <img class="review__photo" src="assets/img/user-2.jpg" alt="User 2">
+                    <div class="review__user-box">
+                        <p class="review__user-name">Mary Thomas</p>
+                        <p class="review__user-date">Sept 13, 2017</p>
+                    </div>
+                    <div class="review__rating">9.3</div>
+                </figcaption>
+            </figure>
+            <button class="btn-inline">Show all <span>&rarr;</span></button>
+        </div>
     </div>
 </main>
