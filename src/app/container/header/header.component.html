@@ -1,6 +1,20 @@
-<header fxLayout="row" fxLayoutAlign="space-between center" class="header">
+<header
+           fxLayout.xs="row wrap"
+           fxLayoutAlign.xs="space-between space-between"
+
+           fxLayout="row"
+           fxLayoutAlign="space-between center"
+           class="header">
     <img class="logo" src="assets/img/logo.png" alt="trillo logo">
-    <form fxLayout="row" fxLayoutAlign="center" fxFlex="0 0 40" class="search" action="#">
+    <form
+        fxFlex.xs="0 0 100"
+        fxFlexOrder.xs="1"
+
+        fxFlex="0 0 40"
+        fxLayout="row"
+        fxLayoutAlign="center"
+        class="search"
+        action="#">
         <input class="search__input" type="text" placeholder="Search hotels">
         <button class="search__button">
             <svg class="search__icon">

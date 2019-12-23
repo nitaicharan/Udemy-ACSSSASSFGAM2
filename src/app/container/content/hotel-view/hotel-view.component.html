@@ -1,4 +1,6 @@
-<main fxFill class="hotel-view">
+<main
+         fxFlex
+         class="hotel-view">
     <div fxLayout="row" class="gallery">
         <figure class="gallery__item">
             <img class="gallery__photo" src="assets/img/hotel-1.jpg" alt="Photo of hotel 1">
@@ -45,7 +47,9 @@
         </div>
     </div>
 
-    <div class="detail">
+    <div
+        fxLayout.sm="column"
+        class="detail">
         <div fxFlex="0 0 60" class="description">
             <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.</p>
             <p class="paragraph">Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.</p>
@@ -97,13 +101,13 @@
             <button class="btn-inline">Show all <span>&rarr;</span></button>
         </div>
     </div>
-        <div class="cta">
-            <h2 class="cta__book-now">
-                Good news! We have 4 free rooms for your selected dates!
-            </h2>
-            <button class="btn">
-                <span class="btn__visible">Book now</span>
-                <span class="btn__invisible">Only 4 rooms left</span>
-            </button>
-        </div>
+    <div class="cta">
+        <h2 class="cta__book-now">
+            Good news! We have 4 free rooms for your selected dates!
+        </h2>
+        <button class="btn">
+            <span class="btn__visible">Book now</span>
+            <span class="btn__invisible">Only 4 rooms left</span>
+        </button>
+    </div>
 </main>
