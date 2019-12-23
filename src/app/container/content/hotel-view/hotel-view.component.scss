@@ -1,3 +1,5 @@
+@import "../../../../assets/sass/_base.scss";
+
 .hotel-view {
     background-color: #fff;
 }
@@ -109,6 +111,10 @@
     font-size: 1.4rem;
     padding: 4.5rem;
     background-color: var(--color-grey-light-1);
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem;
+    }
 }
 
 .description {
@@ -116,6 +122,11 @@
     box-shadow: var(--shadow-light);
     padding: 3rem;
     margin-right: 4.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
 }
 
 .user-reviews {
@@ -172,7 +183,7 @@
         border: 3px solid #fff;
 
         &:not(:last-child) {
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 }
@@ -184,6 +195,11 @@
     margin-bottom: 3.5rem;
     position: relative;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
 
     &__text {
         margin-bottom: 2rem;
@@ -241,6 +257,10 @@
 
     padding: 3.5rem 0;
     text-align: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2.5 0rem;
+    }
 
     &__book-now {
         font-size: 2rem;

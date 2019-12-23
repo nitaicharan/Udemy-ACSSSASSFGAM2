@@ -10,6 +10,7 @@ import { HeaderComponent } from './container/header/header.component';
 import { ContentComponent } from './container/content/content.component';
 import { HotelViewComponent } from './container/content/hotel-view/hotel-view.component';
 import { SidebarComponent } from './container/content/sidebar/sidebar.component';
+import { CustomBreakPointsProvider } from './custom-breakpoints.service';
 
 @NgModule({
   declarations: [
@@ -22,10 +23,11 @@ import { SidebarComponent } from './container/content/sidebar/sidebar.component'
   ],
   imports: [
       BrowserModule,
+      FlexLayoutModule.withConfig({addOrientationBps: true}),
       AppRoutingModule,
       FlexLayoutModule
   ],
-  providers: [],
+  providers: [CustomBreakPointsProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
